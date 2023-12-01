@@ -1,0 +1,430 @@
+/*
+* littlelink V1
+* https://littlelink.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/21/2019
+*
+* Built using:
+*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Grid
+- Base Styles
+- Typography
+- Links
+- Code
+- Spacing
+- Utilities
+*
+* You'll find the button css in css/brands.css.
+*
+*/
+
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container {
+  position: relative;
+  width: 100%;
+  /* max-width: 600px; */
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.container-left {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.column {
+  position: center;
+  width: 100%;
+  float: center;
+  box-sizing: border-box;
+}
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0;
+  }
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .container {
+    width: 80%;
+  }
+
+  .column,
+  .columns {
+    margin-left: 0;
+  }
+
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0;
+  }
+}
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+
+html {
+  font-size: 100%;
+  color-scheme: dark;
+}
+
+body {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 64px;
+  letter-spacing: 0;
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  h1 {
+    font-size: 48px;
+    line-height: 96px;
+  }
+}
+
+p {
+  margin-top: 0;
+}
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a {
+  color: #4899F7;
+}
+
+a:hover {
+  color: #7AB8FF;
+}
+
+/* Code
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+code {
+  padding: 0.2rem 0.5rem;
+  margin: 0 0.2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #f1f1f1;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+}
+
+pre>code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre;
+}
+
+/* Spacing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+button,
+.button {
+  margin-bottom: 1rem;
+}
+
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1.5rem;
+}
+
+pre,
+blockquote,
+dl,
+figure,
+p,
+ol {
+  margin-bottom: 2.5rem;
+}
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.u-pull-right {
+  float: right;
+}
+
+.u-pull-left {
+  float: left;
+}
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #e1e1e1;
+}
+
+/* Radius values:
+
+10%-40%: Squircles
+50% (default): True circle
+*/
+
+.skill-icon {
+  /* padding: 0px 8px 3.5px 0px; */
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  display: flex;
+}
+
+.skill {
+  transition: all 0.1s ease 0s !important;
+  padding: 4px;
+  margin: 8px;
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill:hover {
+  transform: scale(1.2);
+  -webkit-filter: drop-shadow(0px 0px 4px #00e9d2d6) !important;
+  filter: drop-shadow(0px 0px 4px #00e9d2d6) !important;
+}
+
+.contact {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.contact:hover {
+  transform: scale(1.2);
+  -webkit-filter: drop-shadow(0px 0px 4px #00e9d28a) !important;
+  filter: drop-shadow(0px 0px 4px #00e9d28a) !important;
+}
+
+.rocket {
+  animation: rocket 1s cubic-bezier(.36, .07, .57, .99) infinite;
+  animation-name: rocket;
+  /* Refers to the name of your @keyframes element below */
+  animation-duration: 1.5s;
+  /* Change to speed up or slow down */
+  animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  display: inline-block;
+  margin-left: 10px;
+}
+
+@keyframes rocket {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 1;
+  }
+
+  5% {
+    transform: scale(1) translate(2px, 0);
+    opacity: 1;
+  }
+
+  10% {
+    transform: scale(1) translate(1px, -2px);
+    opacity: 1;
+  }
+
+  15% {
+    transform: scale(1) translate(3px, -1px);
+    opacity: 1;
+  }
+
+  20% {
+    transform: scale(1) translate(2px, -3px);
+    opacity: 1;
+  }
+
+  25% {
+    transform: scale(1) translate(4px, -2px);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1) translate(10px, -10px);
+    opacity: 0;
+  }
+
+  51% {
+    transform: scale(1) translate(-10px, 10px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1) translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.laptop {
+  animation: laptop-animation 1s cubic-bezier(.36, .07, .57, .99) infinite;
+  animation-name: laptop-animation;
+  /* Refers to the name of your @keyframes element below */
+  animation-duration: 1.5s;
+  /* Change to speed up or slow down */
+  animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  display: inline-block;
+  margin-left: 10px;
+}
+
+@keyframes laptop-animation {
+  0% {
+    transform: skewX(0);
+  }
+
+  50% {
+    transform: skewX(10deg);
+  }
+
+  100% {
+    transform: skewX(0);
+  }
+}
+
+span.js-word {
+  color: #00ffcb;
+  font-weight: 600;
+}
+
+span.js-word:hover {
+  transition: 50ms;
+  font-size: 1.2rem;
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 1px rgba(254, 255, 255, 0.534)) !important
+}
+
+.avatar {
+  width: 138px;
+  height: 138px;
+  object-fit: cover;
+  background-position: center;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: .4s;
+  -webkit-filter: drop-shadow(0px 0px 6px #ffffff8a) !important;
+  filter: drop-shadow(0px 0px 6px #ffffff8a) !important;
+}
+
+.avatar:hover {
+  border: unset;
+  -webkit-filter: drop-shadow(0px 0px 20px #00e9d28a) !important;
+  filter: drop-shadow(0px 0px 20px #00e9d28a) !important;
+  animation: glowing 20s linear infinite;
+  outline: 3px solid #4ECDC4;
+  outline-offset: 8px;
+}
+
+.hide {
+  /* display: none; */
+  visibility: hidden;
+  height: 32px;
+  margin-top: 10px;
+}
+
+.avatarContent:hover+.hide {
+  visibility: visible;
+  display: block;
+  color: white;
+}
+
+.line-1,
+.line-2,
+.line-3 {
+  /* position: relative;
+  top: 50%;
+  width: 24em; */
+  margin: 0.5rem auto;
+  /* border-right: 2px solid rgba(255, 255, 255, .75); */
+  /* font-size: 180%; */
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  cursor: none;
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    500ms steps(44);
+}
+
+.anim-typewriter-2 {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    500ms steps(44);
+  -webkit-animation-delay: 7s;
+  animation-delay: 4s;
+}
+
+.anim-typewriter-3 {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    500ms steps(44);
+  -webkit-animation-delay: 7s;
+  animation-delay: 8s;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
