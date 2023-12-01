@@ -236,8 +236,8 @@ hr {
 
 .skill:hover {
   transform: scale(1.2);
-  -webkit-filter: drop-shadow(0px 0px 4px #00e9d2d6) !important;
-  filter: drop-shadow(0px 0px 4px #00e9d2d6) !important;
+  -webkit-filter: drop-shadow(0px 0px 2px #ffffffa3) !important;
+  filter: drop-shadow(0px 0px 2px #ffffffa3) !important;
 }
 
 .contact {
@@ -328,7 +328,7 @@ hr {
   }
 
   50% {
-    transform: skewX(10deg);
+    transform: skewX(12deg);
   }
 
   100% {
