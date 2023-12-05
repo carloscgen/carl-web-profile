@@ -342,13 +342,13 @@ span.js-word {
 }
 
 span.js-word:hover {
+  color: #00e4b6;
   transition: 50ms;
-  font-size: 1.2rem;
   cursor: pointer;
-  filter: drop-shadow(0px 0px 1px rgba(254, 255, 255, 0.534)) !important
+  filter: drop-shadow(0px 0px 6px rgba(0, 255, 255, 0.662)) !important
 }
 span a.download-resume:hover {
-  filter: drop-shadow(0px 0px 10px rgb(0, 255, 255)) !important;
+  filter: drop-shadow(0px 0px 10px rgb(225, 255, 255)) !important;
   border: 1px solid white;
   border-radius: 2px;
 }
