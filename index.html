@@ -174,13 +174,16 @@
                     </div>
                 </div>
 
-                <p>© Carl | 2023</p>
+                <p>© Carl | <span id="year-web"></span></p>
 
             </div>
         </div>
     </div>
     <script>
         document.getElementById("year").innerHTML = new Date().getFullYear() - 2017;
+    </script>
+    <script>
+        document.getElementById("year-web").innerHTML = new Date().getFullYear();
     </script>
 </body>
 
